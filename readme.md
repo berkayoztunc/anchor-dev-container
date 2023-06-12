@@ -17,6 +17,8 @@ git clone https://github.com/berkayoztunc/anchor-dev-container
 ```
 Then, open the command palette in VS Code with `cmd+shift+p` and select "Remote-Containers: Open Folder in Container". VS Code will automatically create the Docker container and enter into it.
 
+<img width="615" alt="ss" src="https://github.com/berkayoztunc/anchor-dev-container/assets/9355585/bd38dcfd-b110-482d-b003-0d2d01f366f7">
+
 ## Solana CLI commands
 Creating a Solana wallet:
 
