@@ -9,15 +9,15 @@
 - nodejs@18
 - npm
 - yarn
-- How to use:
-- Clone the repository from Git:
+
+## Clone the repository from Git:
 
 ```bash
 git clone https://github.com/berkayoztunc/anchor-dev-container
 ```
-Then, open the command palette in VS Code with cmd+shift+p and select "Remote-Containers: Open Folder in Container". VS Code will automatically create the Docker container and enter into it.
+Then, open the command palette in VS Code with `cmd+shift+p` and select "Remote-Containers: Open Folder in Container". VS Code will automatically create the Docker container and enter into it.
 
-## Solana CLI commands
+## Solana CLI commands
 Creating a Solana wallet:
 
 ```bash
