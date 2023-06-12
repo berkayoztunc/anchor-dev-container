@@ -1,6 +1,8 @@
+
+
 # Proje kurma ve test çalışması için docker file 
 
-içerisinde 
+## içerisinde 
 
 - solana-cli
 - solana-test-validator
@@ -11,6 +13,15 @@ içerisinde
 - nodejs@18
 - npm
 - yarn
+
+
+## Nasıl kullanılır 
+Git üzerinden repoyu klonlayın
+```bash
+git clone https://github.com/berkayoztunc/anchor-dev-container
+```
+
+Sonra vs code üzerinden `cmd+shift+p` ile komut paletini açın ve `Remote-Containers: Open Folder in Container` seçiyoruz. Sonrasında VS code otomatik olarak docker container'ını oluşturup içerisine giriyor.
 
 
 ## Solana CLI komutları
