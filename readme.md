@@ -1,9 +1,5 @@
-
-
-# Proje kurma ve test çalışması için docker file 
-
-## içerisinde 
-
+# Docker file for project setup and testing
+- Included:
 - solana-cli
 - solana-test-validator
 - anchor-cli
@@ -13,63 +9,63 @@
 - nodejs@18
 - npm
 - yarn
+- How to use:
+- Clone the repository from Git:
 
-
-## Nasıl kullanılır 
-Git üzerinden repoyu klonlayın
 ```bash
 git clone https://github.com/berkayoztunc/anchor-dev-container
 ```
+Then, open the command palette in VS Code with cmd+shift+p and select "Remote-Containers: Open Folder in Container". VS Code will automatically create the Docker container and enter into it.
 
-Sonra vs code üzerinden `cmd+shift+p` ile komut paletini açın ve `Remote-Containers: Open Folder in Container` seçiyoruz. Sonrasında VS code otomatik olarak docker container'ını oluşturup içerisine giriyor.
+## Solana CLI commands
+Creating a Solana wallet:
 
-
-## Solana CLI komutları
-
-Solana cüzdan oluşturma
-    
 ```bash
 solana-keygen new
 ```
+Requesting Solana Airdrop:
 
-Solana Airdrop isteme
 ```bash
 solana airdrop 2
 ```
+Changing the Solana network:
 
-Solana ağı değiştirme
 ```bash
 solana config set --url https://api.devnet.solana.com
 ```
-Solana cüzdan adresi görüntüleme
+Viewing the Solana wallet address:
+
 ```bash
 solana address
 ```
-Solana cüzdan bakiyesi görüntüleme
+Viewing the Solana wallet balance:
+
 ```bash
 solana balance
 ```
-Solana config görüntüleme
+Viewing the Solana config:
+
 ```bash
 solana config get
 ```
+## Anchor CLI commands
+Creating an Anchor project:
 
-## Anchor CLI komutları
-
-Anchor proje oluşturma
 ```bash
 anchor init <project-name>
 ```
-Anchor proje build etme
+Building an Anchor project:
+
 ```bash
 anchor build
 ```
-Anchor proje test etme
+Testing an Anchor project:
+
 ```bash
 anchor test
 ```
-Anchor proje deploy etme (! bu noktada biraz fazla SOL'a ihtiyaç duyuluyor o yüzden airdop yapmak gerekebilir !)
+Deploying an Anchor project (Note: This step requires a sufficient amount of SOL, so an airdrop may be necessary):
+
 ```bash
 anchor deploy
 ```
-
